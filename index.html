@@ -1,0 +1,177 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, viewport-fit=cover"
+    />
+    <meta name="robots" content="noindex, nofollow" />
+    <title>Gotcha! This was a fake link</title>
+    <style>
+      :root {
+        --bg: #ffffff;
+        --card: #eaf2f3;
+        --ink: #14232b;
+        --muted: #5f6f77;
+        --accent: #c62f2f;
+        --teal: #0b4f5c;
+        --amber: #f2b01e;
+      }
+      @media (prefers-color-scheme: dark) {
+        :root {
+          --bg: #14232b;
+          --card: #1d333d;
+          --ink: #ffffff;
+          --muted: #b6c4ca;
+          --accent: #ff8a80;
+          --teal: #9fd3da;
+          --amber: #f2b01e;
+        }
+      }
+      * {
+        box-sizing: border-box;
+      }
+      html,
+      body {
+        margin: 0;
+        padding: 0;
+        background: var(--bg);
+        color: var(--ink);
+      }
+      body {
+        font-family: "Segoe UI", Calibri, Arial, sans-serif;
+        font-size: 20px;
+        line-height: 1.5;
+        padding: env(safe-area-inset-top, 0) 18px env(safe-area-inset-bottom, 0);
+      }
+      main {
+        max-width: 640px;
+        margin: 0 auto;
+        padding: 28px 0 40px;
+      }
+      h1 {
+        font-size: 2rem;
+        line-height: 1.2;
+        margin: 0 0 12px;
+      }
+      h1 span {
+        color: var(--accent);
+      }
+      p {
+        margin: 0 0 16px;
+      }
+      .banner {
+        background: var(--amber);
+        color: #14232b;
+        font-weight: 700;
+        border-radius: 12px;
+        padding: 14px 16px;
+        margin-bottom: 20px;
+      }
+      .card {
+        background: var(--card);
+        border-radius: 14px;
+        padding: 18px 18px 6px;
+        margin: 20px 0;
+      }
+      .card h2 {
+        font-size: 1.2rem;
+        margin: 0 0 10px;
+        color: var(--teal);
+      }
+      .video {
+        position: relative;
+        width: 100%;
+        aspect-ratio: 16 / 9;
+        border-radius: 12px;
+        overflow: hidden;
+        background: #000;
+        margin: 8px 0 16px;
+      }
+      .video iframe {
+        position: absolute;
+        inset: 0;
+        width: 100%;
+        height: 100%;
+        border: 0;
+      }
+      .small {
+        color: var(--muted);
+        font-size: 0.85rem;
+      }
+      a {
+        color: var(--teal);
+        font-weight: 600;
+      }
+      ol {
+        padding-left: 1.3em;
+        margin: 0 0 12px;
+      }
+      li {
+        margin-bottom: 8px;
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+      <div class="banner">This is a training demo. It is harmless.</div>
+
+      <h1>Gotcha! <span>You tapped a fake link.</span></h1>
+      <p>
+        You scanned a QR code and opened the link without checking where it
+        went. That is exactly what scammers hope for. You are safe this time,
+        because this page asks for nothing.
+      </p>
+
+      <div class="video">
+        <iframe
+          src="https://www.youtube-nocookie.com/embed/dQw4w9WgXcQ"
+          title="A well-known music video, used as a prank"
+          allow="
+            accelerometer;
+            encrypted-media;
+            gyroscope;
+            picture-in-picture;
+            web-share;
+          "
+          allowfullscreen
+          loading="lazy"
+        ></iframe>
+      </div>
+      <p class="small">
+        If the video does not play,
+        <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ"
+          >tap here to watch it</a
+        >.
+      </p>
+
+      <div class="card">
+        <h2>If this had been a real scam page</h2>
+        <p>
+          It could have asked for your card number, your bank login or your OTP.
+        </p>
+      </div>
+
+      <div class="card">
+        <h2>What would have protected you</h2>
+        <ol>
+          <li>Point the camera. Do not tap yet.</li>
+          <li>Read the link your phone shows.</li>
+          <li>
+            Check the owner. An official Singapore government site ends in
+            <strong>.gov.sg</strong>.
+          </li>
+          <li>
+            Safest of all: skip the QR and search for the app in your app store.
+          </li>
+        </ol>
+      </div>
+
+      <p class="small">
+        This page is part of a scam awareness workshop. It has no forms and does
+        not ask for any information.
+      </p>
+    </main>
+  </body>
+</html>
